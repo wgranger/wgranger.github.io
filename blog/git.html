@@ -1,17 +1,46 @@
 <!DOCTYPE html>
+<html>
 <head>
-  <title>Your page title here</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+<link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+<style>
+      body {
+        font-family: 'Lato', sans-serif;
+        font-size: 30px;
+      }
+    </style>
+  <title>
+  Granger's Coding Ground
+  </title>
 </head>
-
+  <body background="../imgs/seamless_paper_texture.png">
+  <header>
+  <table style="background-color:#8aa8c1">
+    <tr>
+      <td style="padding:5px" rowspan="2" width="6em">
+      <a href="https://wgranger.github.io/index.html"><img src="../imgs/profile.png" width="20%"></a>
+      </td>
+      <td style="padding:5px" width="20%">ABOUT ME</td>
+      <td colspan="2" style="padding:5px">PROJECTS</td>
+    </tr>
+    <tr>
+      <td style="padding:5px">CONTACT</td>
+      <td style="padding:5px">RESUME</td>
+      <td style="padding:5px"><a href="https://wgranger.github.io/blog/index.html" style="text-decoration:none">BLOG</a></td>
+    </tr>
+  </table>
+</header>
 <main>
-  <h1>The First Steps with Git</h1>
-  <h2>A Work in Progress</h2>
-  <h4>October 4, 2015</h4>
-
+<nav>
+<p><a href="https://wgranger.github.io/blog/git.html" style="text-decoration:none">WORKING THROUGH GIT</a></p>
+<p><a href="https://wgranger.github.io/blog/css-concepts.html" style="text-decoration:none">INLINE VS BLOCK</a></p>
+</nav>
   <section>
-  <h5> What are the benefits of version control?</h5>
+  <h4>The First Steps with Git</h4>
+  <h5>A Work in Progress</h5>
+  <h6>October 4, 2015</h6>
+
+  <h5><b> What are the benefits of version control?</b></h5>
     <p>
       Version control can be used to keep a running tally of all the changes made on files. For example, if I am working on a text file, I can monitor all of the changes made throughout the history of a document and refer back to earlier changes if needed. By making a commit I can take a snapshot of a certain point in a file's history. Each commit is, in a sense, freezing that document in time. 
 
@@ -19,17 +48,29 @@
 
       Version control gives the user the power to look back at the history of a file's development, and this is an important skill to possess when working on a larger project. Let's say I'm working on a coding file and experimented a little too much and went down a rabbit hole filled with bugs and syntax errors that I just can't shake off. Enter version control! I can just revert back to an earlier, bug-free commit I am sure will work.
     </p>
-    <h5> How does git help you keep track of changes?</h5>
+    <h5><b> How does git help you keep track of changes?</b></h5>
     <p>
         Git can help me keep track of changes through these commits. There's really no end to how many commits can be made, so git can be quite useful in giving me a repository that includes a vast history of all the changes a file has undergone. Each commit has an ID that I can make reference to in the terminal. Although I haven't yet mastered the ability to call upon each particular commit, I'm sure I'll eventually learn how to wield this power in the terminal. However, I've only been working with git for a few days, so there are still many things I've yet to learn.
     </p>
-    <h5> Why use GitHub to store your code?</h5>
+    <h5> <b>Why use GitHub to store your code?</b></h5>
     <p>
         GitHub is a powerful tool to use for many of the open source projects I am working on. At this point, I'm working on some more personal, lower-level projects, of which I might be the only author. However, GitHub's benefits really shine when I am working with a team of people. By using my terminal, I can push some working changes made on my computer to a repository stored on GitHub that others can access. 
       
         GitHub can host many types of files that can have public or private access restrictions. Let's say I'm working on a website's code with a team of five people. If I want to edit the banner of the website, I can pull the website code that is hosted on GitHub, make some edits to the code using my local computer, and finally push those changes to GitHub. The pull request will then be viewed on GitHub and, if approved, will be merged with the master code. The beauty of git is that these changes can be made and uploaded without stepping on the toes of a team member who may concurrently be working on a different aspect of the same file. 
     </p>
-
-      <!-- copy and paste as many sections as you want to add paragraphs -->
   </section>
 </main>
+  <footer>
+  <div>
+  <a href="https://www.facebook.com/will.granger.16">
+  <img src="../imgs/facebook-256-black.png" width="40" height="auto"></a>
+  <a href="https://twitter.com/twillgranger">
+  <img src="../imgs/twitter-256-black.png" width="40" height="auto"></a>
+  <a href="https://www.linkedin.com/profile/view?id=AAIAABK5q4QBW8BAPVroBWeO0Itqz7o2mSTaEdk&trk=nav_responsive_tab_profile_pic">
+  <img src="../imgs/linkedin-256-black.png" width="40" height="auto"></a>
+  <a href="https://github.com/wgranger">
+  <img src="../imgs/github-256-black.png" width="40" height="auto"></a>
+  </div>
+  </footer>
+  </body>
+</html>
