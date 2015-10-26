@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+<style>
+      body {
+        font-family: 'Lato', sans-serif;
+        font-size: 30px;
+      }
+    </style>
+  <title>
+  Granger's Coding Ground
+  </title>
+</head>
+  <body background="../imgs/seamless_paper_texture.png">
+  <header>
+  <table style="background-color:#8aa8c1">
+    <tr>
+      <td style="padding:5px" rowspan="2" width="6em">
+      <a href="https://wgranger.github.io/index.html"><img src="../imgs/profile.png" width="20%"></a>
+      </td>
+      <td style="padding:5px" width="20%">ABOUT ME</td>
+      <td colspan="2" style="padding:5px">PROJECTS</td>
+    </tr>
+    <tr>
+      <td style="padding:5px">CONTACT</td>
+      <td style="padding:5px">RESUME</td>
+      <td style="padding:5px"><a href="https://wgranger.github.io/blog/index.html" style="text-decoration:none">BLOG</a></td>
+    </tr>
+  </table>
+</header>
+<main>
+<nav>
+<p><a href="https://wgranger.github.io/blog/git.html" style="text-decoration:none">WORKING THROUGH GIT</a></p>
+<p><a href="https://wgranger.github.io/blog/css-concepts.html" style="text-decoration:none">INLINE VS BLOCK</a></p>
+<p><a href="https://wgranger.github.io/blog/array-hashes.html" style="text-decoration:none">ARRAYS VS HASHES</a></p>
+</nav>
+<section>
+  <h1>Listing Party</h1>
+  <h2>Arrays vs Hashes</h2>
+  <h4>October 25, 2015</h4>
+<article>
+	<p>Data - lots of it. One of the first things you learn when working through Ruby is that you can store collections of data through <strong>arrays</strong> or <strong>hashes</strong>. Arrays and hashes are like brother two siblings, one is just a bit more complex and mature than the other, and you're going to be using these siblings to help you store lists of information and categories while writing programs.</p>
+
+	<p>Does some of your data contain different categories? <strong>Hashes</strong> are what you are looking for.</p>
+
+	<p>Do you need to keep your data in order? Then <strong>arrays</strong>are what you're looking for.</p>
+
+	<p>Understanding the difference between arrays and hashes can be easy, but mastering them will take a bit of work. Simply put, an array is used for keeping track of a one-dimensional list of data. Each item in an array by default has a number associated to a position in the array. Let's take a look at an example.</p>
+
+	<code>
+		bands = [Creedence Clearwater Revival, Thin Lizzy, Fugazi]
+	</code>
+
+	<p>In the example above, our array <code>bands</code> has three elements. Creedence Clearwater Revival has the default index of 0. Thin Lizzy has a default index of 1, and Fugazi has a default index of 2. This array will retain this order as is the nature of arrays.</p>
+
+	<p>Hashes are much more powerful in that they replace that default integer index with a key-value system. We can now store data in certain categories to make them more dynamic. Check out this code for an example.</p>
+
+	<code>menu = {"guacamole" => 4, "taco" => 3, "burrito" => 7 }</code>
+
+	<p>In the example above, the hash <code>menu</code> contains three key-value pairs. The guacamole key has a value of four, the taco key has a value of three, and the burrito key has a value of seven. </p>
+
+	<p>Understanding the difference between arrays and hashes is the first step. Their differences are evident, but mastering all their peculiarities in depth takes a bit of practice. By working through some beginning Ruby programming, the syntax of arrays and hashes will become more natural and their real potential will be realized.</p>
+
+</article>
+
+
+</section>>
+
+</main>
+  <footer>
+  <div>
+  <a href="https://www.facebook.com/will.granger.16">
+  <img src="../imgs/facebook-256-black.png" width="40" height="auto"></a>
+  <a href="https://twitter.com/twillgranger">
+  <img src="../imgs/twitter-256-black.png" width="40" height="auto"></a>
+  <a href="https://www.linkedin.com/profile/view?id=AAIAABK5q4QBW8BAPVroBWeO0Itqz7o2mSTaEdk&trk=nav_responsive_tab_profile_pic">
+  <img src="../imgs/linkedin-256-black.png" width="40" height="auto"></a>
+  <a href="https://github.com/wgranger">
+  <img src="../imgs/github-256-black.png" width="40" height="auto"></a>
+  </div>
+  </footer>
+  </body>
+</html>
