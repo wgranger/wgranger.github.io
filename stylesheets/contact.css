@@ -1,0 +1,44 @@
+header td {
+	border: 3px dashed black;
+	text-align: center;
+}
+a:visited{
+	color:gray;
+}
+article{
+	text-align: center;
+}
+header img {
+	height: 3.5em;
+	width: auto;
+}
+article table{
+	font-family: monospace;
+	font-weight: bold;
+	height: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: middle
+}
+a {
+	text-decoration: none
+}
+header table{
+	height: 3.5em;
+	width: 100%;
+}
+header{
+	width: 100%;
+}
+footer{
+	width: 100%;
+	background-color: #8aa8c1;
+	height: 8%;
+	position: fixed;
+	top: 92%;
+	left: 0;
+	border-top: 3px solid black
+}
+div{
+	text-align: center;
+}
