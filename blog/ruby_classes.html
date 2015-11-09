@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+<style>
+      body {
+        font-family: 'Lato', sans-serif;
+        font-size: 30px;
+      }
+    </style>
+  <title>
+  Granger's Coding Ground
+  </title>
+</head>
+  <body background="../imgs/seamless_paper_texture.png">
+  <header>
+  <table style="background-color:#8aa8c1">
+    <tr>
+      <td style="padding:5px" rowspan="2" width="6em">
+      <a href="https://wgranger.github.io/index.html"><img src="../imgs/profile.png" width="20%"></a>
+      </td>
+      <td style="padding:5px" width="20%">ABOUT ME</td>
+      <td colspan="2" style="padding:5px">PROJECTS</td>
+    </tr>
+    <tr>
+      <td style="padding:5px"><a href="https://wgranger.github.io/contact.html" style="text-decoration:none">CONTACT</a></td>
+      <td style="padding:5px">RESUME</td>
+      <td style="padding:5px"><a href="https://wgranger.github.io/blog/index.html" style="text-decoration:none">BLOG</a></td>
+    </tr>
+  </table>
+</header>
+<main>
+<nav>
+<p><a href="https://wgranger.github.io/blog/git.html" style="text-decoration:none">WORKING THROUGH GIT</a></p>
+<p><a href="https://wgranger.github.io/blog/css-concepts.html" style="text-decoration:none">INLINE VS BLOCK</a></p>
+</nav>
+<section>
+  <h1>Class Division</h1>
+  <h2>Working Through Ruby Classes</h2>
+  <h4>November 8, 2015</h4>
+
+<p> 
+Once you've started working through some basic methods and become familiar with strings, integers, and arrays in Ruby, you may want to create a class of your own. Just how Ruby endows particular methods to a "string" class or an "array" class, you too can create a class of your own with custom methods that you define. </p>
+<h5>Why use a class?</h5>
+<p>
+The question is valid. Why use a class rather than using a method in Ruby? Using classes will save a good bit of time and frustration in Ruby in that we can append objects with a method to simplify our code rather than rewriting methods. If we wanted to keep track of a record collection using Ruby, we could simply create a class of Records and then create our own methods that could return a release date, artist, record label, or whatever we wanted to know. This would be as easy as using instance variables and methods with our objects.
+</p>
+<p>
+<pre><code>
+class Records
+
+end
+</code></pre>
+</p>
+<p>
+Creating a class is just as easy as creating a method. The above code will create a class in Ruby. The one thing you have to remember, following Ruby conventions, is to capitalize the name of your class. This is a common way to distinguish class names from other items in Ruby.</p>
+<pre><code>
+class Records
+  def initialize(artist, album, year)
+    @artist = artist
+    @album = album
+    @year = year
+  end
+end
+</code></pre>
+<p>
+We took one step further with our code above and assigned some instance variables to our class. Instance variables are a bit more powerful than local variables in that they can be used in various methods. If you recall, local variables can only be used in the method they were created. This isn't too helpful with classes in that we'll want to use instance variables in a number of different methods. Simply include the <s>@</s> sign at the beginning of your variable and you've got a much more powerful instance variable.</p>
+<p>
+Also, note that I used an initialize method that took a number of arguments: artist, album, and year. The initialize method will be performed automatically with each new object that is created of that class. Although unnecessary, the initialize method is often used when creating a new Ruby class. Note how I used three arguments in my initialize method. Although this isn't necessary, I included them to show how I can pass information to a class when creating a new object of the record class.
+</p>
+<pre><code>
+class Records
+  def initialize(artist, album, year)
+    @artist = artist
+    @album = album
+    @year = year
+  end
+
+  def year_first
+    p "#{@year}: #{@artist}, #{@album}"
+  end
+
+  def album_first
+    p "#{@album} by #{@artist} was released in #{@year}."
+  end
+end
+</code></pre>
+<p>
+Our class is getting a bit more fleshed out. Here we have a couple instance methods that will put some information into the console. Remember, these instance methods can only be called upon if there is an object to attach it to. In order to create a new object of a particular class, I would have to run the following code.</p>
+<pre><code>
+john = Records.new
+</code></pre>
+<p>
+I could then use my instance methods to get just the information I was looking for. The following method calls.
+<pre><code>
+john.year_first
+john.album_first
+</code></pre>
+<p>
+Would provide the output below.</p>
+<pre><code>
+"1959: John Coltrane, Giant Steps"
+"Giant Steps by John Coltrane was released in 1959"
+</code></pre>
+<p>
+This is a quick introduction to creating classes in Ruby and endowing them with certain methods. Classes are good for reusing methods that do the same thing. The last thing you want in your code are redundant methods. Reusing methods will save time, energy, money, and sanity.
+</p>
+</section>>
+
+</main>
+  <footer>
+  <div>
+  <a href="https://www.facebook.com/will.granger.16">
+  <img src="../imgs/facebook-256-black.png" width="40" height="auto"></a>
+  <a href="https://twitter.com/twillgranger">
+  <img src="../imgs/twitter-256-black.png" width="40" height="auto"></a>
+  <a href="https://www.linkedin.com/profile/view?id=AAIAABK5q4QBW8BAPVroBWeO0Itqz7o2mSTaEdk&trk=nav_responsive_tab_profile_pic">
+  <img src="../imgs/linkedin-256-black.png" width="40" height="auto"></a>
+  <a href="https://github.com/wgranger">
+  <img src="../imgs/github-256-black.png" width="40" height="auto"></a>
+  </div>
+  </footer>
+  </body>
+</html>
