@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+<style>
+      body {
+        font-family: 'Lato', sans-serif;
+        font-size: 30px;
+      }
+    </style>
+  <title>
+  Granger's Coding Ground
+  </title>
+</head>
+  <body background="../imgs/seamless_paper_texture.png">
+  <header>
+  <table style="background-color:#8aa8c1">
+    <tr>
+      <td style="padding:5px" rowspan="2" width="6em">
+      <a href="https://wgranger.github.io/index.html"><img src="../imgs/profile.png" width="20%"></a>
+      </td>
+      <td style="padding:5px"><a href="https://wgranger.github.io/about.html" style="text-decoration:none">ABOUT ME</td>
+      <td colspan="2" style="padding:5px"><a href="https://wgranger.github.io/projects/index.html" style="text-decoration:none">PROJECTS</td>
+    </tr>
+    <tr>
+      <td style="padding:5px"><a href="https://wgranger.github.io/contact.html" style="text-decoration:none">CONTACT</a></td>
+      <td style="padding:5px">RESUME</td>
+      <td style="padding:5px"><a href="https://wgranger.github.io/blog/index.html" style="text-decoration:none">BLOG</a></td>
+    </tr>
+  </table>
+</header>
+<main>
+<nav>
+<p><a href="https://wgranger.github.io/blog/git.html" style="text-decoration:none">WORKING THROUGH GIT</a></p>
+<p><a href="https://wgranger.github.io/blog/css-concepts.html" style="text-decoration:none">INLINE VS BLOCK</a></p>
+<p><a href="https://wgranger.github.io/blog/array-hashes.html" style="text-decoration:none">ARRAYS VS HASHES</a></p>
+<p><a href="http://wgranger.github.io//blog/enumerable-methods.html" style="text-decoration:none">GROUP_BY</a></p>
+<p><a href="http://wgranger.github.io//blog/ruby_classes.html" style="text-decoration:none">RUBY CLASSES</a></p>
+</nav>
+<section>
+  <h1>The Loop</h1>
+  <h2>Ruby vs. Javascript</h2>
+  <h4>November 15, 2015</h4>
+
+<p> 
+You'll soon find out that one of the most effective ways of manipulating objects in an array is through a loop. However, instead of thinking, I'm going to change this entire group or array, looping can effect certain individual elemnts in an array, depending on how your code is written. <strong>JavaScript</strong> and <strong>Ruby</strong> both have different ways of dealing with loops.
+</p>
+<h6>Looping with JavaScript</h6>
+<p>
+JavaScript is able to utilize a single line of code to set the conditions of a loop. </p>
+<pre>
+<code>
+array = [1, 2, 3, 4, 5]
+
+for( var i = 0; i < array.length; i ++){
+  console.log(array[i]*2);
+}
+
+//output => 2, 4, 6, 8, 10
+</code></pre>
+<p>
+The above code will take all numbers in <code>array</code> and multiply them by two. If you look closely, there are three sections within the parenthesis that follow <code>for</code>. The first section <code>var i = 0</code> sets a variable for the loop. For the purpose of this loop, and many loops in JavaScript, the variable created will act as an index point for the <code>array</code> we are dealing with. The second section let's us know when the loop will end. The loop tells us, as long as this condition is true, var i is less than the array's length, we will execute code below. The third section <code> i++ </code> tells us that var i will increase by one each time console.log is executed.</p>
+
+<p> This is the main way to loop over each item in an array by using JavaScript. You can do the same thing in Ruby, but the syntax looks a little different. Let's look at how to achieve the same output using Ruby.</p>
+
+<h6>Looping in Ruby</h6>
+
+<pre>
+<code>
+array = [1, 2, 3, 4, 5]
+
+array.each do |i|
+  print i * 2
+end
+
+//output => 2, 4, 6, 8, 10
+</code>
+</pre>
+
+<p> The code above looks much simpler. That is because Ruby has some built in methods that can manipulate objects more precisely. Four our Ruby loop, we don't need to define index positions, but we can just use the <code>.each</code> method to iterate through each item in an array. For the code above, each element in the array will receive the temporary placeholder <code>i</code> according to the iteration. Next, we will print that item multiplied by two.</p>
+
+<p>In general, working with Ruby is much easier. Ruby was created to be easier on the user. Thus, in Ruby we are able to receive the same output using less code. Ruby has a library of built-in methods at our disposal which can be used to cut back on the amount of code we need to write.</p>
+
+</section>>
+
+</main>
+  <footer>
+  <div>
+  <a href="https://www.facebook.com/will.granger.16">
+  <img src="../imgs/facebook-256-black.png" width="40" height="auto"></a>
+  <a href="https://twitter.com/twillgranger">
+  <img src="../imgs/twitter-256-black.png" width="40" height="auto"></a>
+  <a href="https://www.linkedin.com/profile/view?id=AAIAABK5q4QBW8BAPVroBWeO0Itqz7o2mSTaEdk&trk=nav_responsive_tab_profile_pic">
+  <img src="../imgs/linkedin-256-black.png" width="40" height="auto"></a>
+  <a href="https://github.com/wgranger">
+  <img src="../imgs/github-256-black.png" width="40" height="auto"></a>
+  </div>
+  </footer>
+  </body>
+</html>
