@@ -1,0 +1,55 @@
+header td {
+	border: 3px dashed black;
+	text-align: center;
+}
+a:visited{
+	color:gray;
+}
+h6 {
+	text-align: center;
+	font-size: medium;
+}
+article img{
+	height:12em;
+}
+article table{
+	font-size: 0.7em;
+	margin-bottom: 50px;
+	text-align: center;
+	width: 100%;
+}
+article table td{
+	padding-top: .5em;
+	text-align: center;
+}
+th{
+	font-size: x-large;
+}
+main h3 {
+	text-align: center;
+	font-family: monospace;
+	margin-top: 60px;
+}
+header img {
+	height: 3.5em;
+	width: auto;
+}
+header table{
+	height: 3.5em;
+	width: 100%;
+}
+header{
+	width: 100%;
+}
+footer{
+	width: 100%;
+	background-color: #8aa8c1;
+	height: 8%;
+	position: fixed;
+	top: 92%;
+	left: 0;
+	border-top: 3px solid black
+}
+div{
+	text-align: center;
+}
