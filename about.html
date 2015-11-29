@@ -1,57 +1,110 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="stylesheets/about.css">
-<style>
-      body {
-        font-family: 'Lato', sans-serif;
-        font-size: 30px;
-      }
-    </style>
-	<title>
-	Granger's Coding Ground
-	</title>
+  <!--ADD OF MATERIALIZE FRAMEWORK -->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="stylesheets/materialize.min.css"  media="screen,projection"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>
+  Granger's Coding Ground
+  </title>
 </head>
-  <body background="imgs/seamless_paper_texture.png">
-  <header>
-  <table style="background-color:#8aa8c1">
-    <tr>
-      <td style="padding:5px" rowspan="2" width="6em">
-      <a href="https://wgranger.github.io/index.html"><img src="imgs/profile.png" width="20%"></a>
-      </td>
-      <td style="padding:5px"><a href="https://wgranger.github.io/about.html" style="text-decoration:none">ABOUT ME</td>
-      <td colspan="2" style="padding:5px"><a href="https://wgranger.github.io/projects/index.html" style="text-decoration:none">PROJECTS</td>
-    </tr>
-    <tr>
-      <td style="padding:5px"><a href="https://wgranger.github.io/contact.html" style="text-decoration:none">CONTACT</a></td>
-      <td style="padding:5px">RESUME</td>
-      <td style="padding:5px"><a href="https://wgranger.github.io/blog/index.html" style="text-decoration:none">BLOG</a></td>
-    </tr>
-  </table>
+
+<body background="imgs/seamless_paper_texture.png">
+  <!-- ADD OF MATERIALIZE JS-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/about.js"></script>
+
+<header>
+  <nav>
+    <div class="nav-wrapper cyan darken-3">
+      <a href="https://wgranger.github.io/index.html" class="brand-logo"><img src="imgs/profile.png" width="25%"></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="https://wgranger.github.io/about.html"><i class="material-icons left">perm_identity</i>ABOUT ME</a></li>
+        <li><a href="https://wgranger.github.io/projects/index.html"><i class="material-icons left">work</i>PROJECTS</a></li>
+        <li><a href="https://wgranger.github.io/contact.html"><i class="material-icons left">email</i>CONTACT</a></li>
+        <li><i class="material-icons left">business</i>RESUME</li>
+        <li><a href="https://wgranger.github.io/blog/index.html"><i class="material-icons left">description</i>BLOG</a></li>
+      </ul>
+    </div>
+  </nav>
 </header>
-<article>
 
-<h3>WILL GRANGER</h3>
-<p>
-I'm originally from Birmingham, AL, but have had the opportunity to travel throughout the US as a touring musician and see the world as a Peace Corps volunteer. In the past I have split my time between music, as a teacher, musician, and manager at a music venue, and education, as an English teacher in primary and secondary schools in the US and universities abroad. I've also spent time as a writer: both academic writing for grants and colloquial writing for articles and blogs.</p>
-<p>
-I am a ravenous consumer of music. If there's an artist I don't know, I'll often spend my day working through that artist's discography - wheter it is Romanian gypsy, Nigerian Afrobeat, or No Wave from New York. Aside from music, I try to keep up my hobby of understanding and building circuits using capacitors, transistors, and resistors. I recently developed a love for two-wheeled vehicles after purchasing a scooter. I love opening up the scooter's engine to understand how it works and learning if I need to adjust the valves, replace the clutch cable, or troubleshoot a lingering problem. I hope my knowledge of mechanics grows to one day rebuilding a salvaged motorcycle.</p>
-<p>
-I hate lines and waiting, which is odd considering I'm a patient person. Although I could wait in the lobby for a doctor for an hour reading pamphlets without breaking a sweat, it's the traffic lines and rows of people waiting for food that I tend to avoid. If I'm ever stuck in traffic, I'll often change my direction and take a much longer route simply so I'm not sitting in traffic and staring at the car in front of me.</p>
+<main>
 
-</article>
-  <footer>
-  <div>
-	<a href="https://www.facebook.com/will.granger.16">
-	<img src="imgs/facebook-256-black.png" width="40" height="auto"></a>
-	<a href="https://twitter.com/twillgranger">
-	<img src="imgs/twitter-256-black.png" width="40" height="auto"></a>
-	<a href="https://www.linkedin.com/profile/view?id=AAIAABK5q4QBW8BAPVroBWeO0Itqz7o2mSTaEdk&trk=nav_responsive_tab_profile_pic">
-	<img src="imgs/linkedin-256-black.png" width="40" height="auto"></a>
-	<a href="https://github.com/wgranger">
-	<img src="imgs/github-256-black.png" width="40" height="auto"></a>
+<div id="index-banner" class="parallax-container">
+  <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center white-text">Will Granger</h1>
+        <br><br>
+      </div>
+    </div>
+  <div class="parallax"><img src="imgs/teach.png" alt="Teaching Image"></div>
+</div>
+
+<div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h4>.background</h4>
+          <p class="left-align light">I'm originally from Birmingham, AL, but have had the opportunity to travel throughout the US as a touring musician and see the world as a Peace Corps volunteer. In the past I have split my time between music, as a teacher, musician, and manager at a music venue, and education, as an English teacher in primary and secondary schools in the US and universities abroad. I've also spent time as a writer: both academic writing for grants and colloquial writing for articles and blogs.</p>
+        </div>
+      </div>
+
+    </div>
   </div>
+
+<div id="index-banner" class="parallax-container">
+  <div class="parallax"><img src="imgs/scooter.png" alt="Scooter Image"></div>
+</div>
+
+<div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h4>.interests</h4>
+          <p class="left-align light">I am a ravenous consumer of music. If there's an artist I don't know, I'll often spend my day working through that artist's discography - wheter it is Romanian gypsy, Nigerian Afrobeat, or No Wave from New York. Aside from music, I try to keep up my hobby of understanding and building circuits using capacitors, transistors, and resistors. I recently developed a love for two-wheeled vehicles after purchasing a scooter. I love opening up the scooter's engine to understand how it works and learning if I need to adjust the valves, replace the clutch cable, or troubleshoot a lingering problem. I hope my knowledge of mechanics grows to one day rebuilding a salvaged motorcycle.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<div id="index-banner" class="parallax-container">
+  <div class="parallax"><img src="imgs/face.png" alt="Face Image"></div>
+</div>
+
+<div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h4>.pet peeves</h4>
+          <p class="left-align light">I hate lines and waiting, which is odd considering I'm a patient person. Although I could wait in the lobby for a doctor for an hour reading pamphlets without breaking a sweat, it's the traffic lines and rows of people waiting for food that I tend to avoid. If I'm ever stuck in traffic, I'll often change my direction and take a much longer route simply so I'm not sitting in traffic and staring at the car in front of me.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+  <footer class="page-footer cyan darken-3">
+    <div class="center">
+      <a href="https://www.facebook.com/will.granger.16">
+      <img src="imgs/facebook-256-black.png" width="40" height="auto"></a>
+      <a href="https://twitter.com/twillgranger">
+      <img src="imgs/twitter-256-black.png" width="40" height="auto"></a>
+      <a href="https://www.linkedin.com/profile/view?id=AAIAABK5q4QBW8BAPVroBWeO0Itqz7o2mSTaEdk&trk=nav_responsive_tab_profile_pic">
+      <img src="imgs/linkedin-256-black.png" width="40" height="auto"></a>
+      <a href="https://github.com/wgranger">
+      <img src="imgs/github-256-black.png" width="40" height="auto"></a>
+    </div>
   </footer>
   </body>
 </html>
