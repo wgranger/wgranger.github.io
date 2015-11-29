@@ -1,65 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
-<style>
-      body {
-        font-family: 'Lato', sans-serif;
-        font-size: 30px;
-      }
-    </style>
-	<title>
-	Blog Landing
-	</title>
+  <!--ADD OF MATERIALIZE FRAMEWORK -->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="../stylesheets/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="../stylesheets/blog_index.css"  media="screen,projection"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>
+  Granger's Coding Ground
+  </title>
 </head>
-  <body background="../imgs/seamless_paper_texture.png">
-  <header>
-  <table style="background-color:#8aa8c1">
-    <tr>
-      <td style="padding:5px" rowspan="2" width="6em">
-      <a href="https://wgranger.github.io/index.html"><img src="../imgs/profile.png" width="20%"></a>
-      </td>
-      <td style="padding:5px"><a href="https://wgranger.github.io/about.html" style="text-decoration:none">ABOUT ME</td>
-      <td colspan="2" style="padding:5px"><a href="https://wgranger.github.io/projects/index.html" style="text-decoration:none">PROJECTS</td>
-    </tr>
-    <tr>
-      <td style="padding:5px"><a href="https://wgranger.github.io/contact.html" style="text-decoration:none">CONTACT</a></td>
-      <td style="padding:5px">RESUME</td>
-      <td style="padding:5px"><a href="https://wgranger.github.io/blog/index.html" style="text-decoration:none">BLOG</a></td>
-    </tr>
-  </table>
+
+<body background="../imgs/seamless_paper_texture.png">
+  <!-- ADD OF MATERIALIZE JS-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/about.js"></script>
+<header>
+
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="https://wgranger.github.io/blog/git.html">WORKING THROUGH GIT</a></li>
+  <li><a href="https://wgranger.github.io/blog/css-concepts.html">INLINE VS BLOCK</a></li>
+  <li class="divider"></li>
+  <li><a href="https://wgranger.github.io/blog/array-hashes.html">ARRAYS VS HASHES</a></li>
+  <li><a href="https://wgranger.github.io/blog/enumerable-methods.html">GROUP_BY</a></li>
+  <li class="divider"></li>
+  <li><a href="https://wgranger.github.io/blog/ruby_classes.html">RUBY CLASSES</a></li>
+  <li><a href="https://wgranger.github.io/blog/JavaScript.html">JAVASCRIPT</a></li>
+  <li class="divider"></li>
+  <li><a href="https://wgranger.github.io/blog/tech.html">TECH</a></li>
+</ul>
+
+  <nav>
+    <div class="nav-wrapper cyan darken-3">
+      <a href="https://wgranger.github.io/index.html" class="brand-logo"><img src="../imgs/profile.png" width="25%"></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="https://wgranger.github.io/about.html">ABOUT ME</a></li>
+        <li><a href="https://wgranger.github.io/projects/index.html">PROJECTS</a></li>
+        <li><a href="https://wgranger.github.io/contact.html">CONTACT</a></li>
+        <li>RESUME</li>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">BLOG<i class="material-icons right">arrow_drop_down</i></a></li>
+      </ul>
+    </div>
+  </nav>
 </header>
-<div height="300px">
-		<table>
+
+<main>
+<div class="container" id="push">
+		<table class="container highlight">
 		<tr>
 			<td style="padding:10px"><a href="https://wgranger.github.io/blog/git.html" style="text-decoration:none">WORKING THROUGH GIT</a></td>
+		</tr>
+		<tr>
 			<td style="padding:10px"><a href="https://wgranger.github.io/blog/css-concepts.html" style="text-decoration:none">INLINE VS BLOCK</a></td>
 		</tr>
 		<tr>
 			<td style="padding:10px"><a href="https://wgranger.github.io/blog/array-hashes.html" style="text-decoration:none">ARRAYS VS HASHES</a></td>
+		</tr>
+		<tr>
 			<td style="padding:10px"><a href="https://wgranger.github.io/blog/enumerable-methods.html" style="text-decoration:none">.GROUP_BY</a></td>
 		</tr>
 		<tr>
 			<td style="padding:10px"><a href="https://wgranger.github.io/blog/ruby_classes.html" style="text-decoration:none">RUBY CLASSES</a></td>
-			<td style="padding:10px">BLOG POST 6</td>
 		</tr>
 		<tr>
-			<td colspan="2" style="padding:10px">BLOG POST 7</td>
+			<td style="padding:10px"><a href="https://wgranger.github.io/blog/JavaScript.html" style="text-decoration:none">JAVASCRIPT</a></td>
+		</tr>
+		<tr>
+			<td style="padding:10px"><a href="https://wgranger.github.io/blog/tech.html" style="text-decoration:none">TECH</a></td>
 		</tr>
 		</table>
 </div>
-  <footer>
-  <div>
-	<a href="https://www.facebook.com/will.granger.16">
-	<img src="../imgs/facebook-256-black.png" width="40" height="auto"></a>
-	<a href="https://twitter.com/twillgranger">
-	<img src="../imgs/twitter-256-black.png" width="40" height="auto"></a>
-	<a href="https://www.linkedin.com/profile/view?id=AAIAABK5q4QBW8BAPVroBWeO0Itqz7o2mSTaEdk&trk=nav_responsive_tab_profile_pic">
-	<img src="../imgs/linkedin-256-black.png" width="40" height="auto"></a>
-	<a href="https://github.com/wgranger">
-	<img src="../imgs/github-256-black.png" width="40" height="auto"></a>
-  </div>
+
+</main>
+
+  <footer class="page-footer cyan darken-3">
+    <div class="center">
+      <a href="https://www.facebook.com/will.granger.16">
+      <img src="../imgs/facebook-256-black.png" width="40" height="auto"></a>
+      <a href="https://twitter.com/twillgranger">
+      <img src="../imgs/twitter-256-black.png" width="40" height="auto"></a>
+      <a href="https://www.linkedin.com/profile/view?id=AAIAABK5q4QBW8BAPVroBWeO0Itqz7o2mSTaEdk&trk=nav_responsive_tab_profile_pic">
+      <img src="../imgs/linkedin-256-black.png" width="40" height="auto"></a>
+      <a href="https://github.com/wgranger">
+      <img src="../imgs/github-256-black.png" width="40" height="auto"></a>
+    </div>
   </footer>
   </body>
 </html>
